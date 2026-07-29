@@ -412,9 +412,13 @@ if (privateRepos === 0) {
   );
 }
 
-if (restricted > 0) {
+// A small residue of redacted contributions is normal — deleted or transferred
+// repos, or orgs whose policy blocks this token. Only a large number means the
+// profile-level "Include private contributions" setting is actually off.
+if (restricted > 100) {
   console.warn(
-    `\n! ${restricted} contributions are still redacted. Enable\n` +
-    '! Settings > Public profile > "Include private contributions on my profile".\n'
+    `\n! ${restricted} contributions are redacted — that is high enough to mean\n` +
+    '! Settings > Public profile > "Include private contributions on my profile"\n' +
+    '! is off, or an org is blocking this token.\n'
   );
 }

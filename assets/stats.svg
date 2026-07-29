@@ -21,7 +21,7 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#f5c66b"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#f5c66b"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">4379</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">4381</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">commits (1y)</text>
     </g>
@@ -33,7 +33,7 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#ffe6ad"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#ffe6ad"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">17</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">21</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">private repos</text>
     </g>
@@ -45,14 +45,26 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#e6edf6"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#e6edf6"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">21</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">25</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">repositories</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">repos worked in</text>
     </g>
     <g transform="translate(258,128)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.52s" dur=".5s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate"
         from="258 138" to="258 128" begin="0.52s" dur=".5s" fill="freeze"/>
+      <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
+            stroke="#ffffff" stroke-opacity=".07"/>
+      <rect width="3" height="56" rx="1.5" fill="#e6edf6"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#e6edf6"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">21</text>
+      <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">repositories</text>
+    </g>
+    <g transform="translate(22,190)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.61s" dur=".5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate"
+        from="22 200" to="22 190" begin="0.61s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#5ee6a0"/>
@@ -61,10 +73,10 @@
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">active days</text>
     </g>
-    <g transform="translate(22,190)" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="0.61s" dur=".5s" fill="freeze"/>
+    <g transform="translate(258,190)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.70s" dur=".5s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate"
-        from="22 200" to="22 190" begin="0.61s" dur=".5s" fill="freeze"/>
+        from="258 200" to="258 190" begin="0.70s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
@@ -73,10 +85,10 @@
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">longest streak</text>
     </g>
-    <g transform="translate(258,190)" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="0.70s" dur=".5s" fill="freeze"/>
+    <g transform="translate(22,252)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.79s" dur=".5s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate"
-        from="258 200" to="258 190" begin="0.70s" dur=".5s" fill="freeze"/>
+        from="22 262" to="22 252" begin="0.79s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#ffe6ad"/>
@@ -84,18 +96,6 @@
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">158</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">busiest day</text>
-    </g>
-    <g transform="translate(22,252)" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="0.79s" dur=".5s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate"
-        from="22 262" to="22 252" begin="0.79s" dur=".5s" fill="freeze"/>
-      <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
-            stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">7</text>
-      <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">languages</text>
     </g>
     <g transform="translate(258,252)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.88s" dur=".5s" fill="freeze"/>
@@ -105,9 +105,9 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">121</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">7</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">pull requests</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">languages</text>
     </g>
     <rect x="-140" y="0" width="140" height="324" fill="#ffffff" opacity=".035">
       <animate attributeName="x" from="-140" to="500" dur="7s" begin="2s" repeatCount="indefinite"/>
