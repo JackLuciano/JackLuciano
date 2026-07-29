@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="JackLuciano" />
+<img src="./assets/header.svg" width="100%" alt="theJack" />
 
 <br/>
 
@@ -20,34 +20,14 @@
 <br/>
 
 <div align="center">
-
-### `>` telemetry
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=JackLuciano&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1220&title_color=f5c66b&icon_color=7ad7ff&text_color=c8d6e8&ring_color=f5c66b" alt="stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JackLuciano&layout=compact&langs_count=8&hide_border=true&bg_color=0d1220&title_color=f5c66b&text_color=c8d6e8" alt="languages"/>
-
-<img height="165" src="https://streak-stats.demolab.com?user=JackLuciano&hide_border=true&background=0d1220&stroke=1a2233&ring=f5c66b&fire=ff5f57&currStreakLabel=7ad7ff&sideLabels=c8d6e8&dates=6b7d96&sideNums=e6edf6&currStreakNum=f5c66b" alt="streak"/>
-
+  <img src="./assets/stats.svg" width="55%" alt="telemetry" />
+  <img src="./assets/langs.svg" width="41%" alt="languages" />
 </div>
 
 <br/>
 
 <div align="center">
-
-### `>` activity
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=JackLuciano&bg_color=0d1220&color=e6edf6&line=f5c66b&point=7ad7ff&area=true&area_color=f5c66b&hide_border=true&custom_title=commits%20over%20time" width="98%" alt="activity graph"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### `>` trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=JackLuciano&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies"/>
-
+  <img src="./assets/heatmap.svg" width="98%" alt="contribution activity" />
 </div>
 
 <br/>
@@ -88,6 +68,9 @@ streaming systems, permission models, and the UI that
 sits on top of all of it. Big codebases, many moving
 resources, everything talking to everything.
 
+Most of it lives in private repos, which is why the
+graph above counts what you can't browse.
+
 </td>
 <td width="50%" valign="top">
 
@@ -96,6 +79,9 @@ resources, everything talking to everything.
 Server is the source of truth, the client is an
 adversary. Reactive state over polling. Delete more
 lines than I add, when I can get away with it.
+
+Cards on this page are generated from the GitHub API by
+a workflow in this repo — no third-party badge services.
 
 </td>
 </tr>
@@ -106,5 +92,4 @@ lines than I add, when I can get away with it.
 
 <div align="center">
 <sub>`built in the dark · powered by coffee and stack traces`</sub>
-
 </div>
