@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-label="whoami terminal">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c111c"/>
+      <stop offset="100%" stop-color="#070a11"/>
+    </linearGradient>
+    <clipPath id="tframe"><rect width="640" height="320" rx="12"/></clipPath>
+
+    <!-- one reveal mask per line -->
+    <clipPath id="l1"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="0.4s"  dur="0.9s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l2"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="1.5s"  dur="0.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l3"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="2.4s"  dur="0.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l4"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="3.3s"  dur="0.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l5"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="4.2s"  dur="0.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l6"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="640" begin="5.1s"  dur="0.9s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <g clip-path="url(#tframe)" font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace" font-size="13.5">
+    <rect width="640" height="320" fill="url(#tbg)"/>
+
+    <!-- title bar -->
+    <rect width="640" height="34" fill="#ffffff" fill-opacity=".035"/>
+    <circle cx="20" cy="17" r="5" fill="#ff5f57"/>
+    <circle cx="38" cy="17" r="5" fill="#febc2e"/>
+    <circle cx="56" cy="17" r="5" fill="#28c840"/>
+    <text x="320" y="21" text-anchor="middle" fill="#6b7d96" font-size="11.5" letter-spacing="1.4">~/dev — zsh</text>
+    <line x1="0" y1="34" x2="640" y2="34" stroke="#ffffff" stroke-opacity=".07"/>
+
+    <g clip-path="url(#l1)">
+      <text x="24" y="72"><tspan fill="#5ee6a0">➜</tspan><tspan fill="#7ad7ff"> ~</tspan><tspan fill="#c8d6e8"> whoami --verbose</tspan></text>
+    </g>
+    <g clip-path="url(#l2)">
+      <text x="24" y="104" fill="#8fa3bf">name<tspan fill="#3f4c60">........</tspan><tspan fill="#f5c66b">JackLuciano</tspan></text>
+    </g>
+    <g clip-path="url(#l3)">
+      <text x="24" y="132" fill="#8fa3bf">role<tspan fill="#3f4c60">........</tspan><tspan fill="#e6edf6">gameplay &amp; backend systems dev</tspan></text>
+    </g>
+    <g clip-path="url(#l4)">
+      <text x="24" y="160" fill="#8fa3bf">stack<tspan fill="#3f4c60">.......</tspan><tspan fill="#e6edf6">Lua &#183; TypeScript &#183; Angular &#183; MySQL</tspan></text>
+    </g>
+    <g clip-path="url(#l5)">
+      <text x="24" y="188" fill="#8fa3bf">focus<tspan fill="#3f4c60">.......</tspan><tspan fill="#e6edf6">multiplayer runtimes, streaming, tooling</tspan></text>
+    </g>
+    <g clip-path="url(#l6)">
+      <text x="24" y="216" fill="#8fa3bf">motto<tspan fill="#3f4c60">.......</tspan><tspan fill="#7ad7ff">"it works on my server"</tspan></text>
+    </g>
+
+    <!-- uptime bar -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="6.1s" dur=".6s" fill="freeze"/>
+      <text x="24" y="256" fill="#8fa3bf">build<tspan fill="#3f4c60">.......</tspan></text>
+      <rect x="120" y="246" width="380" height="8" rx="4" fill="#ffffff" fill-opacity=".06"/>
+      <rect x="120" y="246" width="0" height="8" rx="4" fill="#5ee6a0">
+        <animate attributeName="width" from="0" to="380" begin="6.3s" dur="1.6s" fill="freeze"/>
+      </rect>
+      <text x="514" y="254" fill="#5ee6a0" font-size="12" opacity="0">
+        passing
+        <animate attributeName="opacity" from="0" to="1" begin="7.9s" dur=".4s" fill="freeze"/>
+      </text>
+    </g>
+
+    <!-- prompt + caret -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="8.2s" dur=".3s" fill="freeze"/>
+      <text x="24" y="292"><tspan fill="#5ee6a0">➜</tspan><tspan fill="#7ad7ff"> ~</tspan></text>
+      <rect x="48" y="280" width="8" height="15" fill="#f5c66b">
+        <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <rect width="640" height="320" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+  </g>
+</svg>

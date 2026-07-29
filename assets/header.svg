@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="JackLuciano — systems, servers, and stubborn bugs">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#080b12"/>
+      <stop offset="55%"  stop-color="#0d1220"/>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#f5c66b"/>
+      <stop offset="45%"  stop-color="#ffe6ad"/>
+      <stop offset="100%" stop-color="#7ad7ff"/>
+      <animate attributeName="x1" values="-1;0;-1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2;0"   dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#f5c66b" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#f5c66b" stop-opacity=".9"/>
+      <stop offset="70%" stop-color="#7ad7ff" stop-opacity=".7"/>
+      <stop offset="100%" stop-color="#7ad7ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#f5c66b" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#f5c66b" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7ad7ff" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="frame"><rect width="1000" height="320" rx="18"/></clipPath>
+
+    <path id="orbitA" d="M500,160 m-380,0 a380,120 0 1,0 760,0 a380,120 0 1,0 -760,0" fill="none"/>
+    <path id="orbitB" d="M500,160 m-280,0 a280,90 0 1,1 560,0 a280,90 0 1,1 -560,0" fill="none"/>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="320" fill="url(#bg)"/>
+
+    <!-- drifting grid -->
+    <g opacity=".85">
+      <rect x="-40" y="-40" width="1080" height="400" fill="url(#grid)">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0; 40 40; 0 0" dur="14s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- ambient halos -->
+    <circle cx="180" cy="70" r="220" fill="url(#halo)">
+      <animate attributeName="cy" values="70;120;70" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="860" cy="250" r="200" fill="url(#halo)" opacity=".7">
+      <animate attributeName="cx" values="860;790;860" dur="13s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- orbit rings -->
+    <ellipse cx="500" cy="160" rx="380" ry="120" fill="none" stroke="#7ad7ff" stroke-opacity=".10"/>
+    <ellipse cx="500" cy="160" rx="280" ry="90"  fill="none" stroke="#f5c66b" stroke-opacity=".10"/>
+
+    <g filter="url(#soft)">
+      <circle r="3.5" fill="#f5c66b">
+        <animateMotion dur="8s" repeatCount="indefinite"><mpath href="#orbitA"/></animateMotion>
+        <animate attributeName="opacity" values=".2;1;.2" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.5" fill="#7ad7ff">
+        <animateMotion dur="8s" begin="-3s" repeatCount="indefinite"><mpath href="#orbitA"/></animateMotion>
+      </circle>
+      <circle r="2.8" fill="#7ad7ff">
+        <animateMotion dur="6s" begin="-1.5s" repeatCount="indefinite"><mpath href="#orbitB"/></animateMotion>
+      </circle>
+      <circle r="2" fill="#ffe6ad">
+        <animateMotion dur="6s" begin="-4.2s" repeatCount="indefinite"><mpath href="#orbitB"/></animateMotion>
+      </circle>
+    </g>
+
+    <!-- title -->
+    <g transform="translate(500,150)" text-anchor="middle"
+       font-family="'Segoe UI Semibold','Helvetica Neue',Arial,sans-serif">
+      <text y="0" font-size="72" font-weight="700" letter-spacing="2"
+            fill="none" stroke="url(#ink)" stroke-width="1.1"
+            stroke-dasharray="2400" stroke-dashoffset="2400">
+        JackLuciano
+        <animate attributeName="stroke-dashoffset" from="2400" to="0" dur="2.4s" fill="freeze"/>
+      </text>
+      <text y="0" font-size="72" font-weight="700" letter-spacing="2"
+            fill="url(#ink)" filter="url(#glow)" opacity="0">
+        JackLuciano
+        <animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="1.2s" fill="freeze"/>
+      </text>
+    </g>
+
+    <!-- animated rule -->
+    <rect x="240" y="176" width="520" height="2" fill="url(#rule)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur=".8s" fill="freeze"/>
+      <animate attributeName="width" values="520;544;520" dur="6s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="x"     values="240;228;240" dur="6s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- subtitle -->
+    <g text-anchor="middle" font-family="'Cascadia Code',Consolas,'SF Mono',monospace" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="1s" fill="freeze"/>
+      <text x="500" y="212" font-size="16" fill="#8fa3bf" letter-spacing="4">
+        GAME&#160;SERVERS &#183; REAL-TIME&#160;SYSTEMS &#183; TOO&#160;MANY&#160;RESOURCES
+      </text>
+    </g>
+
+    <!-- status pill -->
+    <g transform="translate(500,254)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.2s" dur=".9s" fill="freeze"/>
+      <rect x="-118" y="-16" width="236" height="32" rx="16"
+            fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".10"/>
+      <circle cx="-96" cy="0" r="4" fill="#5ee6a0">
+        <animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-96" cy="0" r="4" fill="none" stroke="#5ee6a0" stroke-opacity=".6">
+        <animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".6;0" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-80" y="4" font-size="12.5" fill="#c8d6e8" letter-spacing="1.6"
+            font-family="'Cascadia Code',Consolas,monospace">server status: online</text>
+    </g>
+
+    <!-- scanline sweep -->
+    <rect x="-260" y="0" width="260" height="320" opacity=".05" fill="#ffffff">
+      <animate attributeName="x" from="-260" to="1000" dur="7s" begin="3.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect width="1000" height="320" rx="18" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+  </g>
+</svg>
