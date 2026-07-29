@@ -44,11 +44,20 @@ query($login:String!){
   user(login:$login){
     login
     followers{ totalCount }
-    repositories(first:100, ownerAffiliations:OWNER, isFork:false, orderBy:{field:STARGAZERS,direction:DESC}){
+    owned: repositories(first:100, ownerAffiliations:[OWNER], isFork:false, orderBy:{field:STARGAZERS,direction:DESC}){
       totalCount
       nodes{
         isPrivate
         stargazerCount
+      }
+    }
+    contributed: repositories(first:100,
+      ownerAffiliations:[OWNER,COLLABORATOR,ORGANIZATION_MEMBER],
+      isFork:false, orderBy:{field:PUSHED_AT,direction:DESC}){
+      totalCount
+      nodes{
+        nameWithOwner
+        isPrivate
         languages(first:12, orderBy:{field:SIZE,direction:DESC}){
           edges{ size node{ name color } }
         }
@@ -143,7 +152,8 @@ function streaks(days) {
 
 function statsCard(u, st, days, langCount) {
   const cc = u.contributionsCollection;
-  const repos = u.repositories.nodes;
+  const repos = u.owned.nodes;
+  const contributed = u.contributed.nodes;
 
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
   const commits = cc.totalCommitContributions + cc.restrictedContributionsCount;
@@ -155,8 +165,9 @@ function statsCard(u, st, days, langCount) {
   // `commits` is pinned because it is the headline number.
   const candidates = [
     { label: 'commits (1y)', n: commits, color: C.gold, pin: true },
-    { label: 'private repos', n: repos.filter((r) => r.isPrivate).length, color: C.goldLite },
-    { label: 'repositories', n: u.repositories.totalCount, color: C.text },
+    { label: 'private repos', n: contributed.filter((r) => r.isPrivate).length, color: C.goldLite },
+    { label: 'repos worked in', n: contributed.length, color: C.text },
+    { label: 'repositories', n: u.owned.totalCount, color: C.text },
     { label: 'active days', n: activeDays, color: C.green },
     { label: 'longest streak', n: st.longest, color: C.cyan, suffix: 'd' },
     { label: 'busiest day', n: busiest, color: C.goldLite },
@@ -374,18 +385,25 @@ const user = await fetchUser();
 const days = calendarDays(user.contributionsCollection.contributionCalendar);
 const st = streaks(days);
 
-const langs = languageTotals(user.repositories.nodes);
+// Languages come from every repo actually worked in — including org-owned ones,
+// which `ownerAffiliations: OWNER` alone would exclude entirely.
+const langs = languageTotals(user.contributed.nodes);
 
 mkdirSync('assets', { recursive: true });
 writeFileSync('assets/stats.svg', statsCard(user, st, days, langs.length));
 writeFileSync('assets/langs.svg', langsCard(langs));
 writeFileSync('assets/heatmap.svg', heatmapCard(user, days, st));
 
-const privateRepos = user.repositories.nodes.filter((r) => r.isPrivate).length;
+const privateRepos = user.contributed.nodes.filter((r) => r.isPrivate).length;
 const restricted = user.contributionsCollection.restrictedContributionsCount;
 
 console.log(`built cards for ${user.login} — streak ${st.current}d / ${st.longest}d`);
-console.log(`private repos visible: ${privateRepos}  ·  restricted contributions: ${restricted}`);
+console.log(`repos visible: ${user.contributed.nodes.length} (${privateRepos} private)`);
+console.log(`restricted contributions: ${restricted}`);
+console.log('repos feeding the language card:');
+for (const r of user.contributed.nodes) {
+  console.log(`  ${r.isPrivate ? 'private' : 'public '}  ${r.nameWithOwner}`);
+}
 
 if (privateRepos === 0) {
   console.warn(
