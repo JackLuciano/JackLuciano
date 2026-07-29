@@ -141,31 +141,45 @@ function streaks(days) {
 
 // ── card: stats ──────────────────────────────────────────────────────────────
 
-function statsCard(u) {
+function statsCard(u, st, days, langCount) {
   const cc = u.contributionsCollection;
   const repos = u.repositories.nodes;
 
   const stars = repos.reduce((s, r) => s + r.stargazerCount, 0);
   const commits = cc.totalCommitContributions + cc.restrictedContributionsCount;
+  const busiest = Math.max(0, ...days.map((d) => d.contributionCount));
+  const activeDays = days.filter((d) => d.contributionCount > 0).length;
 
-  const tiles = [
-    { label: 'commits (1y)', value: compact(commits), color: C.gold },
-    { label: 'stars earned', value: compact(stars), color: C.goldLite },
-    { label: 'pull requests', value: compact(cc.totalPullRequestContributions), color: C.cyan },
-    { label: 'reviews', value: compact(cc.totalPullRequestReviewContributions), color: C.cyan },
-    { label: 'issues', value: compact(cc.totalIssueContributions), color: C.green },
-    { label: 'repositories', value: compact(u.repositories.totalCount), color: C.text },
-    { label: 'private repos', value: compact(repos.filter((r) => r.isPrivate).length), color: C.dim },
-    { label: 'followers', value: compact(u.followers.totalCount), color: C.dim },
+  // More candidates than slots: any metric that is genuinely zero is dropped
+  // rather than rendered as a dead "0" tile, and the next candidate fills in.
+  // `commits` is pinned because it is the headline number.
+  const candidates = [
+    { label: 'commits (1y)', n: commits, color: C.gold, pin: true },
+    { label: 'private repos', n: repos.filter((r) => r.isPrivate).length, color: C.goldLite },
+    { label: 'repositories', n: u.repositories.totalCount, color: C.text },
+    { label: 'active days', n: activeDays, color: C.green },
+    { label: 'longest streak', n: st.longest, color: C.cyan, suffix: 'd' },
+    { label: 'busiest day', n: busiest, color: C.goldLite },
+    { label: 'languages', n: langCount, color: C.cyan },
+    { label: 'pull requests', n: cc.totalPullRequestContributions, color: C.cyan },
+    { label: 'reviews', n: cc.totalPullRequestReviewContributions, color: C.cyan },
+    { label: 'issues', n: cc.totalIssueContributions, color: C.green },
+    { label: 'stars earned', n: stars, color: C.goldLite },
+    { label: 'followers', n: u.followers.totalCount, color: C.dim },
   ];
 
+  const tiles = candidates
+    .filter((t) => t.pin || t.n > 0)
+    .slice(0, 8)
+    .map((t) => ({ label: t.label, color: t.color, value: compact(t.n) + (t.suffix || '') }));
+
   const W = 500;
-  const H = 320;
   const cols = 2;
   const cw = 220;
   const ch = 56;
   const x0 = 22;
   const y0 = 66;
+  const H = y0 + Math.ceil(tiles.length / cols) * (ch + 6) + 10;
 
   const cells = tiles.map((t, i) => {
     const cx = x0 + (i % cols) * (cw + 16);
@@ -360,9 +374,11 @@ const user = await fetchUser();
 const days = calendarDays(user.contributionsCollection.contributionCalendar);
 const st = streaks(days);
 
+const langs = languageTotals(user.repositories.nodes);
+
 mkdirSync('assets', { recursive: true });
-writeFileSync('assets/stats.svg', statsCard(user));
-writeFileSync('assets/langs.svg', langsCard(languageTotals(user.repositories.nodes)));
+writeFileSync('assets/stats.svg', statsCard(user, st, days, langs.length));
+writeFileSync('assets/langs.svg', langsCard(langs));
 writeFileSync('assets/heatmap.svg', heatmapCard(user, days, st));
 
 const privateRepos = user.repositories.nodes.filter((r) => r.isPrivate).length;

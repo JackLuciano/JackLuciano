@@ -27,7 +27,23 @@
 <br/>
 
 <div align="center">
+  <img src="./assets/architecture.svg" width="98%" alt="system topology" />
+</div>
+
+<br/>
+
+<div align="center">
   <img src="./assets/heatmap.svg" width="98%" alt="contribution activity" />
+</div>
+
+<br/>
+
+<div align="center">
+
+### `>` a year of commits, as a skyline
+
+<img src="./profile-3d-contrib/profile-night-view.svg" width="98%" alt="3D contribution skyline" />
+
 </div>
 
 <br/>
