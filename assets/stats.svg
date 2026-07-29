@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320" role="img" aria-label="GitHub statistics">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 324" width="500" height="324" role="img" aria-label="GitHub statistics">
   <defs>
     <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1220"/><stop offset="100%" stop-color="#070a11"/>
     </linearGradient>
-    <clipPath id="cf"><rect width="500" height="320" rx="12"/></clipPath>
+    <clipPath id="cf"><rect width="500" height="324" rx="12"/></clipPath>
   </defs>
   <g clip-path="url(#cf)" font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">
-    <rect width="500" height="320" fill="url(#cbg)"/>
+    <rect width="500" height="324" fill="url(#cbg)"/>
     <text x="22" y="34" fill="#e6edf6" font-size="13" letter-spacing="2.4">TELEMETRY</text>
     <circle cx="470" cy="29" r="4" fill="#5ee6a0">
       <animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/>
@@ -21,7 +21,7 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#f5c66b"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#f5c66b"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">4560</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">4379</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
             font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">commits (1y)</text>
     </g>
@@ -33,9 +33,9 @@
             stroke="#ffffff" stroke-opacity=".07"/>
       <rect width="3" height="56" rx="1.5" fill="#ffe6ad"/>
       <text x="16" y="24" font-size="20" font-weight="600" fill="#ffe6ad"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">0</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">17</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">stars earned</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">private repos</text>
     </g>
     <g transform="translate(22,128)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.43s" dur=".5s" fill="freeze"/>
@@ -43,11 +43,11 @@
         from="22 138" to="22 128" begin="0.43s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">0</text>
+      <rect width="3" height="56" rx="1.5" fill="#e6edf6"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#e6edf6"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">21</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">pull requests</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">repositories</text>
     </g>
     <g transform="translate(258,128)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.52s" dur=".5s" fill="freeze"/>
@@ -55,11 +55,11 @@
         from="258 138" to="258 128" begin="0.52s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">0</text>
+      <rect width="3" height="56" rx="1.5" fill="#5ee6a0"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#5ee6a0"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">196</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">reviews</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">active days</text>
     </g>
     <g transform="translate(22,190)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.61s" dur=".5s" fill="freeze"/>
@@ -67,11 +67,11 @@
         from="22 200" to="22 190" begin="0.61s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#5ee6a0"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#5ee6a0"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">0</text>
+      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">41d</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">issues</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">longest streak</text>
     </g>
     <g transform="translate(258,190)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.70s" dur=".5s" fill="freeze"/>
@@ -79,11 +79,11 @@
         from="258 200" to="258 190" begin="0.70s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#e6edf6"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#e6edf6"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">4</text>
+      <rect width="3" height="56" rx="1.5" fill="#ffe6ad"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#ffe6ad"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">158</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">repositories</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">busiest day</text>
     </g>
     <g transform="translate(22,252)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.79s" dur=".5s" fill="freeze"/>
@@ -91,11 +91,11 @@
         from="22 262" to="22 252" begin="0.79s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#8fa3bf"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">0</text>
+      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">7</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">private repos</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">languages</text>
     </g>
     <g transform="translate(258,252)" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.88s" dur=".5s" fill="freeze"/>
@@ -103,15 +103,15 @@
         from="258 262" to="258 252" begin="0.88s" dur=".5s" fill="freeze"/>
       <rect width="220" height="56" rx="8" fill="#ffffff" fill-opacity=".035"
             stroke="#ffffff" stroke-opacity=".07"/>
-      <rect width="3" height="56" rx="1.5" fill="#8fa3bf"/>
-      <text x="16" y="24" font-size="20" font-weight="600" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">6</text>
+      <rect width="3" height="56" rx="1.5" fill="#7ad7ff"/>
+      <text x="16" y="24" font-size="20" font-weight="600" fill="#7ad7ff"
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">121</text>
       <text x="16" y="42" font-size="10.5" letter-spacing="1.2" fill="#8fa3bf"
-            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">followers</text>
+            font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">pull requests</text>
     </g>
-    <rect x="-140" y="0" width="140" height="320" fill="#ffffff" opacity=".035">
+    <rect x="-140" y="0" width="140" height="324" fill="#ffffff" opacity=".035">
       <animate attributeName="x" from="-140" to="500" dur="7s" begin="2s" repeatCount="indefinite"/>
     </rect>
-    <rect width="500" height="320" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+    <rect width="500" height="324" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
   </g>
 </svg>
