@@ -1,80 +1,80 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 320" width="380" height="320" role="img" aria-label="Language breakdown">
   <defs>
     <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1220"/><stop offset="100%" stop-color="#070a11"/>
+      <stop offset="0%" stop-color="#131011"/><stop offset="100%" stop-color="#0a0809"/>
     </linearGradient>
     <clipPath id="lf"><rect width="380" height="320" rx="12"/></clipPath>
     <clipPath id="barclip"><rect x="22" y="66" width="336" height="10" rx="5"/></clipPath>
   </defs>
   <g clip-path="url(#lf)" font-family="'Cascadia Code',Consolas,'SF Mono',Menlo,monospace">
     <rect width="380" height="320" fill="url(#lbg)"/>
-    <text x="22" y="34" fill="#e6edf6" font-size="13" letter-spacing="2.4">LANGUAGES</text>
+    <text x="22" y="34" fill="#f2ece6" font-size="13" letter-spacing="2.4">LANGUAGES</text>
     <line x1="22" y1="46" x2="358" y2="46" stroke="#ffffff" stroke-opacity=".08"/>
     <rect x="22" y="66" width="336" height="10" rx="5" fill="#ffffff" fill-opacity=".06"/>
-    <g clip-path="url(#barclip)"><rect x="22.0" y="66" width="0" height="10" fill="#000080">
+    <g clip-path="url(#barclip)"><rect x="22.0" y="66" width="0" height="10" fill="#ffb454">
       <animate attributeName="width" from="0" to="210.7"
                begin="0.20s" dur=".7s" fill="freeze"/>
-    </rect><rect x="232.7" y="66" width="0" height="10" fill="#f1e05a">
+    </rect><rect x="232.7" y="66" width="0" height="10" fill="#ff9a4d">
       <animate attributeName="width" from="0" to="57.1"
                begin="0.30s" dur=".7s" fill="freeze"/>
-    </rect><rect x="289.8" y="66" width="0" height="10" fill="#3178c6">
+    </rect><rect x="289.8" y="66" width="0" height="10" fill="#ff7a5c">
       <animate attributeName="width" from="0" to="24.5"
                begin="0.40s" dur=".7s" fill="freeze"/>
-    </rect><rect x="314.3" y="66" width="0" height="10" fill="#178600">
+    </rect><rect x="314.3" y="66" width="0" height="10" fill="#e5533d">
       <animate attributeName="width" from="0" to="12.8"
                begin="0.50s" dur=".7s" fill="freeze"/>
-    </rect><rect x="327.1" y="66" width="0" height="10" fill="#3572A5">
+    </rect><rect x="327.1" y="66" width="0" height="10" fill="#c98b5e">
       <animate attributeName="width" from="0" to="10.6"
                begin="0.60s" dur=".7s" fill="freeze"/>
-    </rect><rect x="337.7" y="66" width="0" height="10" fill="#c6538c">
+    </rect><rect x="337.7" y="66" width="0" height="10" fill="#a9c46c">
       <animate attributeName="width" from="0" to="7.4"
                begin="0.70s" dur=".7s" fill="freeze"/>
-    </rect><rect x="345.1" y="66" width="0" height="10" fill="#3f4c60">
+    </rect><rect x="345.1" y="66" width="0" height="10" fill="#4b423d">
       <animate attributeName="width" from="0" to="12.9"
                begin="0.80s" dur=".7s" fill="freeze"/>
     </rect></g>
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.40s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="108" r="4.5" fill="#000080"/>
-      <text x="44" y="112" font-size="12" fill="#e6edf6">Lua</text>
-      <text x="358" y="112" font-size="12" text-anchor="end" fill="#8fa3bf">62.7%</text>
+      <circle cx="28" cy="108" r="4.5" fill="#ffb454"/>
+      <text x="44" y="112" font-size="12" fill="#f2ece6">Lua</text>
+      <text x="358" y="112" font-size="12" text-anchor="end" fill="#a2938a">62.7%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.49s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="136" r="4.5" fill="#f1e05a"/>
-      <text x="44" y="140" font-size="12" fill="#e6edf6">JavaScript</text>
-      <text x="358" y="140" font-size="12" text-anchor="end" fill="#8fa3bf">17.0%</text>
+      <circle cx="28" cy="136" r="4.5" fill="#ff9a4d"/>
+      <text x="44" y="140" font-size="12" fill="#f2ece6">JavaScript</text>
+      <text x="358" y="140" font-size="12" text-anchor="end" fill="#a2938a">17.0%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.58s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="164" r="4.5" fill="#3178c6"/>
-      <text x="44" y="168" font-size="12" fill="#e6edf6">TypeScript</text>
-      <text x="358" y="168" font-size="12" text-anchor="end" fill="#8fa3bf">7.3%</text>
+      <circle cx="28" cy="164" r="4.5" fill="#ff7a5c"/>
+      <text x="44" y="168" font-size="12" fill="#f2ece6">TypeScript</text>
+      <text x="358" y="168" font-size="12" text-anchor="end" fill="#a2938a">7.3%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.67s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="192" r="4.5" fill="#178600"/>
-      <text x="44" y="196" font-size="12" fill="#e6edf6">C#</text>
-      <text x="358" y="196" font-size="12" text-anchor="end" fill="#8fa3bf">3.8%</text>
+      <circle cx="28" cy="192" r="4.5" fill="#e5533d"/>
+      <text x="44" y="196" font-size="12" fill="#f2ece6">C#</text>
+      <text x="358" y="196" font-size="12" text-anchor="end" fill="#a2938a">3.8%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.76s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="220" r="4.5" fill="#3572A5"/>
-      <text x="44" y="224" font-size="12" fill="#e6edf6">Python</text>
-      <text x="358" y="224" font-size="12" text-anchor="end" fill="#8fa3bf">3.2%</text>
+      <circle cx="28" cy="220" r="4.5" fill="#c98b5e"/>
+      <text x="44" y="224" font-size="12" fill="#f2ece6">Python</text>
+      <text x="358" y="224" font-size="12" text-anchor="end" fill="#a2938a">3.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.85s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="248" r="4.5" fill="#c6538c"/>
-      <text x="44" y="252" font-size="12" fill="#e6edf6">SCSS</text>
-      <text x="358" y="252" font-size="12" text-anchor="end" fill="#8fa3bf">2.2%</text>
+      <circle cx="28" cy="248" r="4.5" fill="#a9c46c"/>
+      <text x="44" y="252" font-size="12" fill="#f2ece6">SCSS</text>
+      <text x="358" y="252" font-size="12" text-anchor="end" fill="#a2938a">2.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.94s" dur=".5s" fill="freeze"/>
-      <circle cx="28" cy="276" r="4.5" fill="#3f4c60"/>
-      <text x="44" y="280" font-size="12" fill="#e6edf6">Other</text>
-      <text x="358" y="280" font-size="12" text-anchor="end" fill="#8fa3bf">3.8%</text>
+      <circle cx="28" cy="276" r="4.5" fill="#4b423d"/>
+      <text x="44" y="280" font-size="12" fill="#f2ece6">Other</text>
+      <text x="358" y="280" font-size="12" text-anchor="end" fill="#a2938a">3.8%</text>
     </g>
     <rect width="380" height="320" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
   </g>

@@ -4,9 +4,9 @@
 
 <br/>
 
-<a href="https://github.com/JackLuciano?tab=repositories"><img src="https://img.shields.io/badge/repos-explore-0d1220?style=for-the-badge&labelColor=080b12&color=f5c66b" alt="repos"/></a>
-<a href="https://github.com/JackLuciano?tab=followers"><img src="https://img.shields.io/github/followers/JackLuciano?style=for-the-badge&labelColor=080b12&color=7ad7ff&label=followers" alt="followers"/></a>
-<img src="https://komarev.com/ghpvc/?username=JackLuciano&style=for-the-badge&color=5ee6a0&label=VISITORS" alt="views"/>
+<a href="https://github.com/JackLuciano?tab=repositories"><img src="https://img.shields.io/badge/repos-explore-131011?style=for-the-badge&labelColor=0a0809&color=ffb454" alt="repos"/></a>
+<a href="https://github.com/JackLuciano?tab=followers"><img src="https://img.shields.io/github/followers/JackLuciano?style=for-the-badge&labelColor=0a0809&color=ff7a5c&label=followers" alt="followers"/></a>
+<img src="https://komarev.com/ghpvc/?username=JackLuciano&style=for-the-badge&color=a9c46c&label=VISITORS" alt="views"/>
 
 </div>
 

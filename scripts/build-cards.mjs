@@ -15,19 +15,21 @@ const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) throw new Error('GITHUB_TOKEN is required');
 
 const C = {
-  bg0: '#0d1220',
-  bg1: '#070a11',
-  gold: '#f5c66b',
-  goldLite: '#ffe6ad',
-  cyan: '#7ad7ff',
-  green: '#5ee6a0',
-  red: '#ff5f57',
-  text: '#e6edf6',
-  dim: '#8fa3bf',
-  faint: '#3f4c60',
+  bg0: '#131011',
+  bg1: '#0a0809',
+  amber: '#ffb454',
+  sand: '#ffd9a0',
+  rust: '#ff7a5c',
+  green: '#a9c46c',
+  red: '#e5533d',
+  text: '#f2ece6',
+  dim: '#a2938a',
+  faint: '#4b423d',
 };
 
 const MONO = "'Cascadia Code',Consolas,'SF Mono',Menlo,monospace";
+
+const LANG_RAMP = ['#ffb454', '#ff9a4d', '#ff7a5c', '#e5533d', '#c98b5e', '#a9c46c', '#4b423d'];
 
 const esc = (s) => String(s).replace(/[<>&'"]/g, (c) =>
   ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' }[c]));
@@ -115,9 +117,16 @@ function languageTotals(repos) {
   const top = all.slice(0, 6);
   const rest = all.slice(6).reduce((s, l) => s + l.size, 0);
 
-  if (rest > 0) top.push({ name: 'Other', size: rest, color: C.faint });
+  if (rest > 0) top.push({ name: 'Other', size: rest });
 
-  return top.map((l) => ({ ...l, pct: (l.size / total) * 100 }));
+  // GitHub's own language colors are overwhelmingly blue (Lua #000080,
+  // TypeScript #3178c6) and would clash with the warm palette, so colour by
+  // rank along a warm ramp instead. Identity comes from the label, not the hue.
+  return top.map((l, i) => ({
+    ...l,
+    color: LANG_RAMP[i] ?? C.faint,
+    pct: (l.size / total) * 100,
+  }));
 }
 
 function calendarDays(calendar) {
@@ -164,18 +173,18 @@ function statsCard(u, st, days, langCount) {
   // rather than rendered as a dead "0" tile, and the next candidate fills in.
   // `commits` is pinned because it is the headline number.
   const candidates = [
-    { label: 'commits (1y)', n: commits, color: C.gold, pin: true },
-    { label: 'private repos', n: contributed.filter((r) => r.isPrivate).length, color: C.goldLite },
+    { label: 'commits (1y)', n: commits, color: C.amber, pin: true },
+    { label: 'private repos', n: contributed.filter((r) => r.isPrivate).length, color: C.sand },
     { label: 'repos worked in', n: contributed.length, color: C.text },
     { label: 'repositories', n: u.owned.totalCount, color: C.text },
     { label: 'active days', n: activeDays, color: C.green },
-    { label: 'longest streak', n: st.longest, color: C.cyan, suffix: 'd' },
-    { label: 'busiest day', n: busiest, color: C.goldLite },
-    { label: 'languages', n: langCount, color: C.cyan },
-    { label: 'pull requests', n: cc.totalPullRequestContributions, color: C.cyan },
-    { label: 'reviews', n: cc.totalPullRequestReviewContributions, color: C.cyan },
+    { label: 'longest streak', n: st.longest, color: C.rust, suffix: 'd' },
+    { label: 'busiest day', n: busiest, color: C.sand },
+    { label: 'languages', n: langCount, color: C.rust },
+    { label: 'pull requests', n: cc.totalPullRequestContributions, color: C.rust },
+    { label: 'reviews', n: cc.totalPullRequestReviewContributions, color: C.rust },
     { label: 'issues', n: cc.totalIssueContributions, color: C.green },
-    { label: 'stars earned', n: stars, color: C.goldLite },
+    { label: 'stars earned', n: stars, color: C.sand },
     { label: 'followers', n: u.followers.totalCount, color: C.dim },
   ];
 
@@ -300,10 +309,11 @@ function heatmapCard(u, days, st) {
   const shade = (n) => {
     if (n === 0) return '#ffffff';
     const t = Math.min(1, Math.log(1 + n) / Math.log(1 + peak));
-    if (t < 0.3) return '#3d5a52';
-    if (t < 0.55) return '#3f8f6c';
-    if (t < 0.8) return C.green;
-    return C.gold;
+    // Warm ember ramp: dim coal -> ember -> amber -> hot sand.
+    if (t < 0.3) return '#4a3520';
+    if (t < 0.55) return '#96602a';
+    if (t < 0.8) return C.amber;
+    return C.sand;
   };
 
   const cell = 11;
@@ -369,10 +379,10 @@ function heatmapCard(u, days, st) {
     <line x1="24" y1="46" x2="${W - 24}" y2="46" stroke="#ffffff" stroke-opacity=".08"/>
     ${monthLabels}
     ${cells}
-    ${stat(24, compact(total), 'contributions', C.gold)}
+    ${stat(24, compact(total), 'contributions', C.amber)}
     ${stat(180, `${st.current}d`, 'current streak', C.green)}
-    ${stat(340, `${st.longest}d`, 'longest streak', C.cyan)}
-    ${stat(500, compact(peak), 'busiest day', C.goldLite)}
+    ${stat(340, `${st.longest}d`, 'longest streak', C.rust)}
+    ${stat(500, compact(peak), 'busiest day', C.sand)}
     <rect width="${W}" height="${H}" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
   </g>
 </svg>
