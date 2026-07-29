@@ -1499,7 +1499,7 @@
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">4566</text>
+      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">4568</text>
       <text x="24" y="219" font-size="10.5" letter-spacing="1.2" fill="#a2938a">contributions</text>
     </g>
     
