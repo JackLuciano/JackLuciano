@@ -1500,20 +1500,24 @@
         <animate attributeName="fill-opacity" from="0" to="1"
                  begin="0.854s" dur=".45s" fill="freeze"/>
       </rect><rect x="752" y="144" width="11" height="11" rx="2.5"
+        fill="#ffb454" fill-opacity="0">
+        <animate attributeName="fill-opacity" from="0" to="1"
+                 begin="0.874s" dur=".45s" fill="freeze"/>
+      </rect><rect x="752" y="158" width="11" height="11" rx="2.5"
         fill="#ffffff" fill-opacity="0">
         <animate attributeName="fill-opacity" from="0" to=".05"
-                 begin="0.874s" dur=".45s" fill="freeze"/>
+                 begin="0.894s" dur=".45s" fill="freeze"/>
       </rect>
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">5220</text>
+      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">5283</text>
       <text x="24" y="219" font-size="10.5" letter-spacing="1.2" fill="#a2938a">contributions</text>
     </g>
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="180" y="202" font-size="19" font-weight="600" fill="#a9c46c">4d</text>
+      <text x="180" y="202" font-size="19" font-weight="600" fill="#a9c46c">5d</text>
       <text x="180" y="219" font-size="10.5" letter-spacing="1.2" fill="#a2938a">current streak</text>
     </g>
     
