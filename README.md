@@ -81,12 +81,20 @@
 
 <table>
 <tr>
-<td width="100%" valign="top">
+<td width="50%" valign="top">
 
 **[`biro-butor`](https://biro-butor.vercel.app/)** &nbsp;·&nbsp; <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live-a9c46c?style=flat-square&labelColor=0a0809&color=a9c46c" alt="live"/></a>
 
 Office furniture showcase site — product gallery, responsive
 layout, deployed on Vercel.
+
+</td>
+<td width="50%" valign="top">
+
+**[`duna-palma`](https://dunapalma.vercel.app/)** &nbsp;·&nbsp; <a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/live-a9c46c?style=flat-square&labelColor=0a0809&color=a9c46c" alt="live"/></a>
+
+Restaurant & rotisserie site — two locations, weekly menu,
+image galleries, online ordering. Deployed on Vercel.
 
 </td>
 </tr>
