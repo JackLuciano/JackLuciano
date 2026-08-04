@@ -9,7 +9,8 @@
 <img src="https://komarev.com/ghpvc/?username=JackLuciano&style=for-the-badge&color=a9c46c&label=VISITORS" alt="views"/>
 
 <a href="mailto:jackfunc@gmail.com"><img src="https://img.shields.io/badge/jackfunc%40gmail.com-131011?style=for-the-badge&logo=gmail&logoColor=ffb454&labelColor=0a0809" alt="email"/></a>
-<a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live%20projects-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="projects"/></a>
+<a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="biro-butor"/></a>
+<a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/live-duna--palma-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="duna-palma"/></a>
 
 </div>
 
@@ -79,28 +80,12 @@
 
 ### `>` projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="./assets/projects.svg" width="98%" alt="shipped projects" />
 
-**[`biro-butor`](https://biro-butor.vercel.app/)** &nbsp;·&nbsp; <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live-a9c46c?style=flat-square&labelColor=0a0809&color=a9c46c" alt="live"/></a>
+<a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/visit-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=ffb454&labelColor=0a0809&color=ffb454" alt="visit biro-butor"/></a>
+<a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/visit-duna--palma-131011?style=for-the-badge&logo=vercel&logoColor=ff7a5c&labelColor=0a0809&color=ff7a5c" alt="visit duna-palma"/></a>
 
-Office furniture showcase site — product gallery, responsive
-layout, deployed on Vercel.
-
-</td>
-<td width="50%" valign="top">
-
-**[`duna-palma`](https://dunapalma.vercel.app/)** &nbsp;·&nbsp; <a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/live-a9c46c?style=flat-square&labelColor=0a0809&color=a9c46c" alt="live"/></a>
-
-Restaurant & rotisserie site — two locations, weekly menu,
-image galleries, online ordering. Deployed on Vercel.
-
-</td>
-</tr>
-</table>
-
-<sub>`personal site in progress — it lands here when it ships`</sub>
+<sub>`03 · personal site in progress — it lands here when it ships`</sub>
 
 </div>
 
