@@ -8,6 +8,9 @@
 <a href="https://github.com/JackLuciano?tab=followers"><img src="https://img.shields.io/github/followers/JackLuciano?style=for-the-badge&labelColor=0a0809&color=ff7a5c&label=followers" alt="followers"/></a>
 <img src="https://komarev.com/ghpvc/?username=JackLuciano&style=for-the-badge&color=a9c46c&label=VISITORS" alt="views"/>
 
+<a href="mailto:jackfunc@gmail.com"><img src="https://img.shields.io/badge/jackfunc%40gmail.com-131011?style=for-the-badge&logo=gmail&logoColor=ffb454&labelColor=0a0809" alt="email"/></a>
+<a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live%20projects-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="projects"/></a>
+
 </div>
 
 <br/>
@@ -73,6 +76,29 @@
 <br/>
 
 <div align="center">
+
+### `>` projects
+
+<table>
+<tr>
+<td width="100%" valign="top">
+
+**[`biro-butor`](https://biro-butor.vercel.app/)** &nbsp;·&nbsp; <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live-a9c46c?style=flat-square&labelColor=0a0809&color=a9c46c" alt="live"/></a>
+
+Office furniture showcase site — product gallery, responsive
+layout, deployed on Vercel.
+
+</td>
+</tr>
+</table>
+
+<sub>`personal site in progress — it lands here when it ships`</sub>
+
+</div>
+
+<br/>
+
+<div align="center">
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -102,6 +128,17 @@ a workflow in this repo — no third-party badge services.
 </td>
 </tr>
 </table>
+</div>
+
+<br/>
+
+<div align="center">
+
+### `>` contact
+
+<a href="mailto:jackfunc@gmail.com"><img src="https://img.shields.io/badge/email-jackfunc%40gmail.com-131011?style=for-the-badge&logo=gmail&logoColor=ffb454&labelColor=0a0809" alt="email"/></a>
+<a href="https://github.com/JackLuciano"><img src="https://img.shields.io/badge/github-JackLuciano-131011?style=for-the-badge&logo=github&logoColor=ff7a5c&labelColor=0a0809" alt="github"/></a>
+
 </div>
 
 <br/>
