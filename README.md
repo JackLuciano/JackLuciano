@@ -92,35 +92,11 @@
 <br/>
 
 <div align="center">
-<table>
-<tr>
-<td width="50%" valign="top">
 
-**`what I build`**
+### `>` operating manual
 
-Real-time multiplayer game servers — persistence layers,
-streaming systems, permission models, and the UI that
-sits on top of all of it. Big codebases, many moving
-resources, everything talking to everything.
+<img src="./assets/manifesto.svg" width="98%" alt="what I build · how I work" />
 
-Most of it lives in private repos, which is why the
-graph above counts what you can't browse.
-
-</td>
-<td width="50%" valign="top">
-
-**`how I work`**
-
-Server is the source of truth, the client is an
-adversary. Reactive state over polling. Delete more
-lines than I add, when I can get away with it.
-
-Cards on this page are generated from the GitHub API by
-a workflow in this repo — no third-party badge services.
-
-</td>
-</tr>
-</table>
 </div>
 
 <br/>

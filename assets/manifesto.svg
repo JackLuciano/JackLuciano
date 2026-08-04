@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="what I build and how I work">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171314"/><stop offset="100%" stop-color="#0a0809"/>
+    </linearGradient>
+    <linearGradient id="mrule" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffb454" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mtick" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffb454"/><stop offset="100%" stop-color="#ffb454" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mtick2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a5c"/><stop offset="100%" stop-color="#ff7a5c" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="mf"><rect width="1000" height="300" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#mf)" font-family="'Cascadia Code',Consolas,monospace">
+    <rect width="1000" height="300" fill="url(#mbg)"/>
+
+    <!-- faint grid -->
+    <g stroke="#ffffff" stroke-opacity=".03">
+      <path d="M0 60H1000M0 120H1000M0 180H1000M0 240H1000"/>
+      <path d="M125 0V300M250 0V300M375 0V300M625 0V300M750 0V300M875 0V300"/>
+    </g>
+
+    <!-- centre divider -->
+    <rect x="499" y="24" width="1.4" height="252" fill="url(#mrule)"/>
+
+    <!-- ── left panel ───────────────────────────────────────── -->
+    <g transform="translate(40,0)">
+      <rect x="0" y="34" width="46" height="2" fill="url(#mtick)"/>
+      <text x="0" y="62" fill="#ffb454" font-size="13" letter-spacing="2.6">WHAT I BUILD</text>
+
+      <g fill="#cbbfb6" font-size="13.5">
+        <text x="0" y="100">Real-time multiplayer game servers. Persistence</text>
+        <text x="0" y="123">layers, streaming systems, permission models —</text>
+        <text x="0" y="146">and the UI that sits on top of all of it.</text>
+        <text x="0" y="184" fill="#8d7f77">Large codebases, hundreds of live resources,</text>
+        <text x="0" y="207" fill="#8d7f77">everything talking to everything else.</text>
+      </g>
+
+      <g font-size="11.5">
+        <rect x="0" y="238" width="1.6" height="34" fill="#ffb454" fill-opacity=".55"/>
+        <text x="14" y="252" fill="#a2938a">Most of it lives in private repos — which is why</text>
+        <text x="14" y="269" fill="#a2938a">the graph above counts what you can't browse.</text>
+      </g>
+    </g>
+
+    <!-- ── right panel ──────────────────────────────────────── -->
+    <g transform="translate(540,0)">
+      <rect x="0" y="34" width="46" height="2" fill="url(#mtick2)"/>
+      <text x="0" y="62" fill="#ff7a5c" font-size="13" letter-spacing="2.6">HOW I WORK</text>
+
+      <g font-size="13.5">
+        <text x="0" y="100" fill="#ff7a5c">▸ <tspan fill="#cbbfb6">The server is the truth. The client is an adversary.</tspan></text>
+        <text x="0" y="132" fill="#ff7a5c">▸ <tspan fill="#cbbfb6">Reactive state over polling. Nothing asks twice.</tspan></text>
+        <text x="0" y="164" fill="#ff7a5c">▸ <tspan fill="#cbbfb6">Delete more lines than I add, when I can get</tspan></text>
+        <text x="20" y="186" fill="#cbbfb6">away with it.</text>
+      </g>
+
+      <g font-size="11.5">
+        <rect x="0" y="238" width="1.6" height="34" fill="#ff7a5c" fill-opacity=".55"/>
+        <text x="14" y="252" fill="#a2938a">Every card on this page is generated from the</text>
+        <text x="14" y="269" fill="#a2938a">GitHub API by a workflow in this repo. No badge</text>
+      </g>
+      <text x="14" y="286" fill="#a2938a" font-size="11.5">services, no hand-edited numbers.</text>
+    </g>
+
+    <!-- sweep -->
+    <rect x="-160" y="0" width="160" height="300" fill="#ffffff" opacity=".035">
+      <animate attributeName="x" from="-160" to="1000" dur="9s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect width="1000" height="300" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+  </g>
+</svg>
