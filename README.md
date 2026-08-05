@@ -4,11 +4,20 @@
 
 <br/>
 
+### [`>` thejacks.xyz](https://thejacks.xyz)
+
+<a href="https://thejacks.xyz"><img src="https://img.shields.io/badge/%E2%86%97%20thejacks.xyz-visit%20the%20site-0a0809?style=for-the-badge&logo=nextdotjs&logoColor=a9c46c&labelColor=0a0809&color=a9c46c" alt="thejacks.xyz" height="34"/></a>
+
+<sub>`portfolio · interactive skill map · 3D · live github feed`</sub>
+
+<br/>
+
 <a href="https://github.com/JackLuciano?tab=repositories"><img src="https://img.shields.io/badge/repos-explore-131011?style=for-the-badge&labelColor=0a0809&color=ffb454" alt="repos"/></a>
 <a href="https://github.com/JackLuciano?tab=followers"><img src="https://img.shields.io/github/followers/JackLuciano?style=for-the-badge&labelColor=0a0809&color=ff7a5c&label=followers" alt="followers"/></a>
 <img src="https://komarev.com/ghpvc/?username=JackLuciano&style=for-the-badge&color=a9c46c&label=VISITORS" alt="views"/>
 
 <a href="mailto:jackfunc@gmail.com"><img src="https://img.shields.io/badge/jackfunc%40gmail.com-131011?style=for-the-badge&logo=gmail&logoColor=ffb454&labelColor=0a0809" alt="email"/></a>
+<a href="https://thejacks.xyz"><img src="https://img.shields.io/badge/live-thejacks.xyz-131011?style=for-the-badge&logo=nextdotjs&logoColor=a9c46c&labelColor=0a0809" alt="thejacks.xyz"/></a>
 <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/live-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="biro-butor"/></a>
 <a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/live-duna--palma-131011?style=for-the-badge&logo=vercel&logoColor=a9c46c&labelColor=0a0809" alt="duna-palma"/></a>
 
@@ -82,10 +91,9 @@
 
 <img src="./assets/projects.svg" width="98%" alt="shipped projects" />
 
+<a href="https://thejacks.xyz"><img src="https://img.shields.io/badge/visit-thejacks.xyz-131011?style=for-the-badge&logo=nextdotjs&logoColor=a9c46c&labelColor=0a0809&color=a9c46c" alt="visit thejacks.xyz"/></a>
 <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/visit-biro--butor-131011?style=for-the-badge&logo=vercel&logoColor=ffb454&labelColor=0a0809&color=ffb454" alt="visit biro-butor"/></a>
 <a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/visit-duna--palma-131011?style=for-the-badge&logo=vercel&logoColor=ff7a5c&labelColor=0a0809&color=ff7a5c" alt="visit duna-palma"/></a>
-
-<sub>`03 · personal site in progress — it lands here when it ships`</sub>
 
 </div>
 
@@ -105,6 +113,7 @@
 
 ### `>` contact
 
+<a href="https://thejacks.xyz"><img src="https://img.shields.io/badge/site-thejacks.xyz-131011?style=for-the-badge&logo=nextdotjs&logoColor=a9c46c&labelColor=0a0809" alt="thejacks.xyz"/></a>
 <a href="mailto:jackfunc@gmail.com"><img src="https://img.shields.io/badge/email-jackfunc%40gmail.com-131011?style=for-the-badge&logo=gmail&logoColor=ffb454&labelColor=0a0809" alt="email"/></a>
 <a href="https://github.com/JackLuciano"><img src="https://img.shields.io/badge/github-JackLuciano-131011?style=for-the-badge&logo=github&logoColor=ff7a5c&labelColor=0a0809" alt="github"/></a>
 
