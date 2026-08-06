@@ -12,13 +12,13 @@
     <line x1="22" y1="46" x2="358" y2="46" stroke="#ffffff" stroke-opacity=".08"/>
     <rect x="22" y="66" width="336" height="10" rx="5" fill="#ffffff" fill-opacity=".06"/>
     <g clip-path="url(#barclip)"><rect x="22.0" y="66" width="0" height="10" fill="#ffb454">
-      <animate attributeName="width" from="0" to="208.5"
+      <animate attributeName="width" from="0" to="208.4"
                begin="0.20s" dur=".7s" fill="freeze"/>
-    </rect><rect x="230.5" y="66" width="0" height="10" fill="#ff9a4d">
+    </rect><rect x="230.4" y="66" width="0" height="10" fill="#ff9a4d">
       <animate attributeName="width" from="0" to="56.6"
                begin="0.30s" dur=".7s" fill="freeze"/>
-    </rect><rect x="287.1" y="66" width="0" height="10" fill="#ff7a5c">
-      <animate attributeName="width" from="0" to="27.3"
+    </rect><rect x="286.9" y="66" width="0" height="10" fill="#ff7a5c">
+      <animate attributeName="width" from="0" to="27.4"
                begin="0.40s" dur=".7s" fill="freeze"/>
     </rect><rect x="314.4" y="66" width="0" height="10" fill="#e5533d">
       <animate attributeName="width" from="0" to="12.6"
@@ -50,7 +50,7 @@
       <animate attributeName="opacity" from="0" to="1" begin="0.58s" dur=".5s" fill="freeze"/>
       <circle cx="28" cy="164" r="4.5" fill="#ff7a5c"/>
       <text x="44" y="168" font-size="12" fill="#f2ece6">TypeScript</text>
-      <text x="358" y="168" font-size="12" text-anchor="end" fill="#a2938a">8.1%</text>
+      <text x="358" y="168" font-size="12" text-anchor="end" fill="#a2938a">8.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.67s" dur=".5s" fill="freeze"/>
