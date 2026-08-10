@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Szabolcs Szabo — software that earns its place">
   <defs>
     <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#1c1615"/>
-      <stop offset="55%"  stop-color="#171212"/>
-      <stop offset="100%" stop-color="#1a1413"/>
+      <stop offset="0%"   stop-color="#141618"/>
+      <stop offset="55%"  stop-color="#0e0f11"/>
+      <stop offset="100%" stop-color="#101214"/>
     </linearGradient>
 
     <linearGradient id="hink" x1="0" y1="0" x2="1" y2="0">
@@ -67,7 +67,7 @@
 
     <g font-family="'Cascadia Code',Consolas,'SF Mono',monospace">
       <!-- eyebrow -->
-      <text x="88" y="82" font-size="13" fill="#a2938a" letter-spacing="4" opacity="0">
+      <text x="88" y="82" font-size="13" fill="#9099a1" letter-spacing="4" opacity="0">
         00&#160;&#183;&#160;INDEX
         <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur=".8s" fill="freeze"/>
       </text>
@@ -94,10 +94,10 @@
       <!-- tagline -->
       <g opacity="0">
         <animate attributeName="opacity" from="0" to="1" begin="2.6s" dur=".9s" fill="freeze"/>
-        <text x="88" y="210" font-size="15" fill="#f2ece6">
+        <text x="88" y="210" font-size="15" fill="#eef1f4">
           I build web applications that are quick, deliberate and pleasant to use
         </text>
-        <text x="88" y="234" font-size="15" fill="#a2938a">
+        <text x="88" y="234" font-size="15" fill="#9099a1">
           &#8212; production sites for real businesses, and multiplayer game-server tooling.
         </text>
       </g>
@@ -114,7 +114,7 @@
           <animate attributeName="r" values="4;12" dur="2s" repeatCount="indefinite"/>
           <animate attributeName="stroke-opacity" values=".6;0" dur="2s" repeatCount="indefinite"/>
         </circle>
-        <text x="36" y="4" font-size="12" fill="#e0d6cd" letter-spacing="1.4">open to work</text>
+        <text x="36" y="4" font-size="12" fill="#d7dce1" letter-spacing="1.4">open to work</text>
       </g>
 
       <!-- right-side orbit motif -->

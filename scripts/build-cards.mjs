@@ -15,21 +15,21 @@ const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) throw new Error('GITHUB_TOKEN is required');
 
 const C = {
-  bg0: '#1a1514',
-  bg1: '#141010',
+  bg0: '#141618',
+  bg1: '#0e0f11',
   amber: '#ffb454',
   sand: '#ffd9a0',
   rust: '#ff7a5c',
   green: '#a9c46c',
   red: '#e5533d',
-  text: '#f2ece6',
-  dim: '#a2938a',
-  faint: '#4b423d',
+  text: '#eef1f4',
+  dim: '#9099a1',
+  faint: '#4a5057',
 };
 
 const MONO = "'Cascadia Code',Consolas,'SF Mono',Menlo,monospace";
 
-const LANG_RAMP = ['#ffb454', '#ff9a4d', '#ff7a5c', '#e5533d', '#c98b5e', '#a9c46c', '#4b423d'];
+const LANG_RAMP = ['#ffb454', '#ff9a4d', '#ff7a5c', '#e5533d', '#c98b5e', '#a9c46c', '#4a5057'];
 
 const esc = (s) => String(s).replace(/[<>&'"]/g, (c) =>
   ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' }[c]));
@@ -310,7 +310,7 @@ function heatmapCard(u, days, st) {
     if (n === 0) return '#ffffff';
     const t = Math.min(1, Math.log(1 + n) / Math.log(1 + peak));
     // Warm ember ramp: dim coal -> ember -> amber -> hot sand.
-    if (t < 0.3) return '#4a3520';
+    if (t < 0.3) return '#262b30';
     if (t < 0.55) return '#96602a';
     if (t < 0.8) return C.amber;
     return C.sand;

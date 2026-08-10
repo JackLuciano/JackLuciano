@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 92" width="1000" height="92" role="img" aria-label="05 work — selected projects, shipped">
   <defs>
     <linearGradient id="s05bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1c1615"/><stop offset="100%" stop-color="#171212"/>
+      <stop offset="0%" stop-color="#141618"/><stop offset="100%" stop-color="#0e0f11"/>
     </linearGradient>
     <linearGradient id="s05rule" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#ff7a5c" stop-opacity=".8"/>
@@ -21,9 +21,9 @@
     <text x="30" y="59" font-size="34" font-weight="700" fill="#ff7a5c" fill-opacity=".22">05</text>
 
     <g clip-path="url(#s05type)">
-      <text x="98" y="44" font-size="23" font-weight="600" fill="#f2ece6" letter-spacing="1.5"
+      <text x="98" y="44" font-size="23" font-weight="600" fill="#eef1f4" letter-spacing="1.5"
             font-family="'Segoe UI Semibold','Helvetica Neue',Arial,sans-serif">work</text>
-      <text x="98" y="70" font-size="13" fill="#a2938a" letter-spacing="1.2">selected projects, shipped</text>
+      <text x="98" y="70" font-size="13" fill="#9099a1" letter-spacing="1.2">selected projects, shipped</text>
     </g>
 
     <!-- caret parked at the end of the type reveal -->

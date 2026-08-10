@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="what I build and how I work">
   <defs>
     <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#201a19"/><stop offset="100%" stop-color="#141010"/>
+      <stop offset="0%" stop-color="#1a1d20"/><stop offset="100%" stop-color="#0e0f11"/>
     </linearGradient>
     <linearGradient id="mrule" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
@@ -44,8 +44,8 @@
 
       <g font-size="11.5">
         <rect x="0" y="238" width="1.6" height="34" fill="#ffb454" fill-opacity=".55"/>
-        <text x="14" y="252" fill="#a2938a">Most of it lives in private repos — which is why</text>
-        <text x="14" y="269" fill="#a2938a">the graph above counts what you can't browse.</text>
+        <text x="14" y="252" fill="#9099a1">Most of it lives in private repos — which is why</text>
+        <text x="14" y="269" fill="#9099a1">the graph above counts what you can't browse.</text>
       </g>
     </g>
 
@@ -63,10 +63,10 @@
 
       <g font-size="11.5">
         <rect x="0" y="238" width="1.6" height="34" fill="#ff7a5c" fill-opacity=".55"/>
-        <text x="14" y="252" fill="#a2938a">Every card on this page is generated from the</text>
-        <text x="14" y="269" fill="#a2938a">GitHub API by a workflow in this repo. No badge</text>
+        <text x="14" y="252" fill="#9099a1">Every card on this page is generated from the</text>
+        <text x="14" y="269" fill="#9099a1">GitHub API by a workflow in this repo. No badge</text>
       </g>
-      <text x="14" y="286" fill="#a2938a" font-size="11.5">services, no hand-edited numbers.</text>
+      <text x="14" y="286" fill="#9099a1" font-size="11.5">services, no hand-edited numbers.</text>
     </g>
 
     <!-- sweep -->

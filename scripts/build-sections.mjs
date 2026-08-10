@@ -9,14 +9,14 @@ const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets');
 mkdirSync(OUT, { recursive: true });
 
 const C = {
-  bg0: '#1c1615',
-  bg1: '#171212',
+  bg0: '#141618',
+  bg1: '#0e0f11',
   amber: '#ffb454',
   sand: '#ffd9a0',
   rust: '#ff7a5c',
   green: '#a9c46c',
-  text: '#f2ece6',
-  dim: '#a2938a',
+  text: '#eef1f4',
+  dim: '#9099a1',
 };
 
 const SECTIONS = [
