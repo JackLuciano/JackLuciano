@@ -15,8 +15,8 @@ const TOKEN = process.env.GITHUB_TOKEN;
 if (!TOKEN) throw new Error('GITHUB_TOKEN is required');
 
 const C = {
-  bg0: '#131011',
-  bg1: '#0a0809',
+  bg0: '#1a1514',
+  bg1: '#141010',
   amber: '#ffb454',
   sand: '#ffd9a0',
   rust: '#ff7a5c',

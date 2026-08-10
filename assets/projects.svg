@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 438" width="940" height="438" role="img" aria-label="shipped projects">
   <defs>
     <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#171314"/><stop offset="100%" stop-color="#0a0809"/>
+      <stop offset="0%" stop-color="#201a19"/><stop offset="100%" stop-color="#141010"/>
     </linearGradient>
     <linearGradient id="pedgeA" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffb454"/><stop offset="100%" stop-color="#ffb454" stop-opacity=".15"/>

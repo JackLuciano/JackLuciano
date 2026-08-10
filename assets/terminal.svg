@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-label="whoami terminal">
   <defs>
     <linearGradient id="tbg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#171314"/>
-      <stop offset="100%" stop-color="#0a0809"/>
+      <stop offset="0%" stop-color="#201a19"/>
+      <stop offset="100%" stop-color="#141010"/>
     </linearGradient>
     <clipPath id="tframe"><rect width="640" height="320" rx="12"/></clipPath>
 
