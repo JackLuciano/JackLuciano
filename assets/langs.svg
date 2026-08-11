@@ -12,9 +12,9 @@
     <line x1="22" y1="46" x2="358" y2="46" stroke="#ffffff" stroke-opacity=".08"/>
     <rect x="22" y="66" width="336" height="10" rx="5" fill="#ffffff" fill-opacity=".06"/>
     <g clip-path="url(#barclip)"><rect x="22.0" y="66" width="0" height="10" fill="#ffb454">
-      <animate attributeName="width" from="0" to="208.4"
+      <animate attributeName="width" from="0" to="208.3"
                begin="0.20s" dur=".7s" fill="freeze"/>
-    </rect><rect x="230.4" y="66" width="0" height="10" fill="#ff9a4d">
+    </rect><rect x="230.3" y="66" width="0" height="10" fill="#ff9a4d">
       <animate attributeName="width" from="0" to="56.6"
                begin="0.30s" dur=".7s" fill="freeze"/>
     </rect><rect x="286.9" y="66" width="0" height="10" fill="#ff7a5c">
