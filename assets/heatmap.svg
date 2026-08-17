@@ -1483,6 +1483,10 @@
         fill="#ffffff" fill-opacity="0">
         <animate attributeName="fill-opacity" from="0" to=".05"
                  begin="0.774s" dur=".45s" fill="freeze"/>
+      </rect><rect x="752" y="88" width="11" height="11" rx="2.5"
+        fill="#ffffff" fill-opacity="0">
+        <animate attributeName="fill-opacity" from="0" to=".05"
+                 begin="0.794s" dur=".45s" fill="freeze"/>
       </rect>
     
     <g opacity="0">
