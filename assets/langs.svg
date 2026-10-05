@@ -21,7 +21,7 @@
       <animate attributeName="width" from="0" to="47.1"
                begin="0.40s" dur=".7s" fill="freeze"/>
     </rect><rect x="247.0" y="66" width="0" height="10" fill="#e5533d">
-      <animate attributeName="width" from="0" to="34.7"
+      <animate attributeName="width" from="0" to="34.8"
                begin="0.50s" dur=".7s" fill="freeze"/>
     </rect><rect x="281.8" y="66" width="0" height="10" fill="#c98b5e">
       <animate attributeName="width" from="0" to="32.7"
@@ -44,7 +44,7 @@
       <animate attributeName="opacity" from="0" to="1" begin="0.49s" dur=".5s" fill="freeze"/>
       <circle cx="28" cy="136" r="4.5" fill="#ff9a4d"/>
       <text x="44" y="140" font-size="12" fill="#eef1f4">C++</text>
-      <text x="358" y="140" font-size="12" text-anchor="end" fill="#9099a1">18.1%</text>
+      <text x="358" y="140" font-size="12" text-anchor="end" fill="#9099a1">18.2%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.58s" dur=".5s" fill="freeze"/>
