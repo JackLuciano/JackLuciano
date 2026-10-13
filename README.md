@@ -91,6 +91,11 @@
 <a href="https://thejacks.xyz"><img src="https://img.shields.io/badge/01-thejacks.xyz-141010?style=for-the-badge&logo=nextdotjs&logoColor=ffb454&labelColor=141010&color=ffb454" alt="thejacks.xyz" height="30"/></a>
 <a href="https://biro-butor.vercel.app/"><img src="https://img.shields.io/badge/02-biro--butor-141010?style=for-the-badge&logo=vercel&logoColor=ffd9a0&labelColor=141010&color=ffd9a0" alt="biro-butor" height="30"/></a>
 <a href="https://dunapalma.vercel.app/"><img src="https://img.shields.io/badge/03-duna--palma-141010?style=for-the-badge&logo=vercel&logoColor=ff7a5c&labelColor=141010&color=ff7a5c" alt="duna-palma" height="30"/></a>
+<a href="https://github.com/JackLuciano/claude-bridge-blender"><img src="https://img.shields.io/badge/04-claude--bridge--blender-141010?style=for-the-badge&logo=blender&logoColor=ffb454&labelColor=141010&color=ffb454" alt="claude-bridge-blender" height="30"/></a>
+
+<br/><br/>
+
+<a href="https://github.com/JackLuciano/claude-bridge-blender"><img src="https://raw.githubusercontent.com/JackLuciano/claude-bridge-blender/main/docs/demo.gif" width="70%" alt="Claude Bridge: chat with Claude inside Blender" /></a>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 </div>
