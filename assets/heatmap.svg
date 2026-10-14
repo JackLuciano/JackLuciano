@@ -1416,7 +1416,7 @@
         <animate attributeName="fill-opacity" from="0" to="1"
                  begin="0.818s" dur=".45s" fill="freeze"/>
       </rect><rect x="710" y="144" width="11" height="11" rx="2.5"
-        fill="#96602a" fill-opacity="0">
+        fill="#ffb454" fill-opacity="0">
         <animate attributeName="fill-opacity" from="0" to="1"
                  begin="0.838s" dur=".45s" fill="freeze"/>
       </rect><rect x="710" y="158" width="11" height="11" rx="2.5"
@@ -1488,20 +1488,24 @@
         <animate attributeName="fill-opacity" from="0" to="1"
                  begin="0.794s" dur=".45s" fill="freeze"/>
       </rect><rect x="752" y="102" width="11" height="11" rx="2.5"
-        fill="#96602a" fill-opacity="0">
+        fill="#ffd9a0" fill-opacity="0">
         <animate attributeName="fill-opacity" from="0" to="1"
                  begin="0.814s" dur=".45s" fill="freeze"/>
+      </rect><rect x="752" y="116" width="11" height="11" rx="2.5"
+        fill="#ffb454" fill-opacity="0">
+        <animate attributeName="fill-opacity" from="0" to="1"
+                 begin="0.834s" dur=".45s" fill="freeze"/>
       </rect>
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">5946</text>
+      <text x="24" y="202" font-size="19" font-weight="600" fill="#ffb454">6256</text>
       <text x="24" y="219" font-size="10.5" letter-spacing="1.2" fill="#9099a1">contributions</text>
     </g>
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="180" y="202" font-size="19" font-weight="600" fill="#a9c46c">3d</text>
+      <text x="180" y="202" font-size="19" font-weight="600" fill="#a9c46c">4d</text>
       <text x="180" y="219" font-size="10.5" letter-spacing="1.2" fill="#9099a1">current streak</text>
     </g>
     
@@ -1513,7 +1517,7 @@
     
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur=".6s" fill="freeze"/>
-      <text x="500" y="202" font-size="19" font-weight="600" fill="#ffd9a0">475</text>
+      <text x="500" y="202" font-size="19" font-weight="600" fill="#ffd9a0">482</text>
       <text x="500" y="219" font-size="10.5" letter-spacing="1.2" fill="#9099a1">busiest day</text>
     </g>
     <rect width="790" height="220" rx="12" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
