@@ -15,7 +15,7 @@
       <animate attributeName="width" from="0" to="96.4"
                begin="0.20s" dur=".7s" fill="freeze"/>
     </rect><rect x="118.4" y="66" width="0" height="10" fill="#ff9a4d">
-      <animate attributeName="width" from="0" to="78.5"
+      <animate attributeName="width" from="0" to="78.6"
                begin="0.30s" dur=".7s" fill="freeze"/>
     </rect><rect x="196.9" y="66" width="0" height="10" fill="#ff7a5c">
       <animate attributeName="width" from="0" to="43.5"
@@ -50,7 +50,7 @@
       <animate attributeName="opacity" from="0" to="1" begin="0.58s" dur=".5s" fill="freeze"/>
       <circle cx="28" cy="164" r="4.5" fill="#ff7a5c"/>
       <text x="44" y="168" font-size="12" fill="#eef1f4">TypeScript</text>
-      <text x="358" y="168" font-size="12" text-anchor="end" fill="#9099a1">13.0%</text>
+      <text x="358" y="168" font-size="12" text-anchor="end" fill="#9099a1">12.9%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.67s" dur=".5s" fill="freeze"/>
