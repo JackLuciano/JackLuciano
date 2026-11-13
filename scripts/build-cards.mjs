@@ -321,7 +321,7 @@ function heatmapCard(u, days, st) {
   const gx = 24;
   const gy = 74;
   const W = gx * 2 + weeks.length * (cell + gap);
-  const H = 220;
+  const H = 240;
 
   const cells = weeks.map((w, wi) =>
     w.contributionDays.map((d) => {

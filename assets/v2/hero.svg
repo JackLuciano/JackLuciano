@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-label="Szabolcs Szabó (theJack): desktop apps, web and real-time game systems">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0b0f"/><stop offset="1" stop-color="#07070a"/>
+    </linearGradient>
+    <radialGradient id="o1"><stop offset="0" stop-color="#ff8a3d" stop-opacity=".55"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="o2"><stop offset="0" stop-color="#ff4d6d" stop-opacity=".45"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="o3"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".45"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#ffd9b0"/><stop offset="1" stop-color="#ff9a6b"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+    <radialGradient id="fade" cx=".5" cy=".35" r=".75">
+      <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <mask id="gm"><rect width="1000" height="380" fill="url(#fade)"/></mask>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+    <clipPath id="clip"><rect width="1000" height="380" rx="20"/></clipPath>
+    <style>
+      .t{font-family:'Inter','Segoe UI',system-ui,-apple-system,sans-serif}
+      .m{font-family:'JetBrains Mono','Cascadia Code',Consolas,monospace}
+      .rot text{opacity:0}
+      .rot text:nth-child(1){animation:cy 12s infinite 0s}
+      .rot text:nth-child(2){animation:cy 12s infinite 3s}
+      .rot text:nth-child(3){animation:cy 12s infinite 6s}
+      .rot text:nth-child(4){animation:cy 12s infinite 9s}
+      @keyframes cy{0%{opacity:0;transform:translateY(8px)}4%,21%{opacity:1;transform:translateY(0)}25%,100%{opacity:0;transform:translateY(-8px)}}
+      .caret{animation:bl 1s steps(1) infinite}
+      @keyframes bl{50%{opacity:0}}
+      .rise{animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+      @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1000" height="380" fill="url(#bg)"/>
+    <g filter="url(#blur)">
+      <circle r="190" fill="url(#o1)" cx="760" cy="60">
+        <animate attributeName="cx" values="760;640;800;760" dur="18s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="60;140;30;60" dur="18s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="170" fill="url(#o2)" cx="900" cy="280">
+        <animate attributeName="cx" values="900;780;940;900" dur="22s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="280;220;330;280" dur="22s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="200" fill="url(#o3)" cx="560" cy="330">
+        <animate attributeName="cx" values="560;680;500;560" dur="26s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="330;260;350;330" dur="26s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect width="1000" height="380" fill="url(#grid)" mask="url(#gm)"/>
+    <rect x=".5" y=".5" width="999" height="379" rx="20" fill="none" stroke="#fff" stroke-opacity=".09"/>
+    <rect x="0" y="0" width="260" height="1" fill="url(#sheen)">
+      <animate attributeName="x" values="-260;1000" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <g class="rise">
+      <g transform="translate(56,64)">
+        <rect width="158" height="28" rx="14" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".1"/>
+        <circle cx="16" cy="14" r="4" fill="#4ade80">
+          <animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text class="m" x="28" y="18.5" fill="#cfd3da" font-size="11.5" letter-spacing=".4">open to work</text>
+        <text class="m" x="114" y="18.5" fill="#6b7280" font-size="11.5">· HU</text>
+      </g>
+
+      <text class="t" x="54" y="168" font-size="64" font-weight="700" letter-spacing="-2.5" fill="url(#name)">Szabolcs Szabó</text>
+      <text class="m" x="58" y="204" font-size="15" fill="#8b8f98">aka <tspan fill="#ffb454">theJack</tspan> — software engineer</text>
+
+      <text class="t" x="58" y="258" font-size="22" fill="#9ca3af" letter-spacing="-.3">I build</text>
+      <g class="rot t" font-size="22" font-weight="600" letter-spacing="-.3">
+        <text x="140" y="258" fill="#ffb454">native desktop apps in Rust.</text>
+        <text x="140" y="258" fill="#ff8a6b">real-time multiplayer servers.</text>
+        <text x="140" y="258" fill="#c4b5fd">fast, deliberate web products.</text>
+        <text x="140" y="258" fill="#fca5a5">tools that plug AI into real work.</text>
+      </g>
+
+      <g class="m" font-size="12" fill="#a1a7b0">
+        <g transform="translate(56,300)"><rect width="78" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".08"/><text x="39" y="19.5" text-anchor="middle">Rust</text></g>
+        <g transform="translate(142,300)"><rect width="104" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".08"/><text x="52" y="19.5" text-anchor="middle">TypeScript</text></g>
+        <g transform="translate(254,300)"><rect width="114" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".08"/><text x="57" y="19.5" text-anchor="middle">Tauri · GPUI</text></g>
+        <g transform="translate(376,300)"><rect width="66" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".08"/><text x="33" y="19.5" text-anchor="middle">Lua</text></g>
+        <g transform="translate(450,300)"><rect width="66" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".08"/><text x="33" y="19.5" text-anchor="middle">MCP</text></g>
+      </g>
+    </g>
+
+    <g transform="translate(700,92)" class="m">
+      <rect width="250" height="200" rx="14" fill="#0d0d12" fill-opacity=".72" stroke="#fff" stroke-opacity=".1"/>
+      <circle cx="18" cy="18" r="4.5" fill="#ff5f57"/><circle cx="34" cy="18" r="4.5" fill="#febc2e"/><circle cx="50" cy="18" r="4.5" fill="#28c840"/>
+      <text x="125" y="22" text-anchor="middle" font-size="10.5" fill="#6b7280">~/now</text>
+      <line x1="0" y1="34" x2="250" y2="34" stroke="#fff" stroke-opacity=".07"/>
+      <g font-size="11.5">
+        <text x="18" y="60" fill="#6b7280">$ <tspan fill="#e5e7eb">cargo run -p cairn</tspan></text>
+        <text x="18" y="84" fill="#4ade80">✓ <tspan fill="#a1a7b0">cairn       v0.5.2</tspan></text>
+        <text x="18" y="104" fill="#4ade80">✓ <tspan fill="#a1a7b0">tessera     v0.4.2</tspan></text>
+        <text x="18" y="124" fill="#4ade80">✓ <tspan fill="#a1a7b0">fivem-launch v0.4.1</tspan></text>
+        <text x="18" y="144" fill="#4ade80">✓ <tspan fill="#a1a7b0">claude-bridge v0.2.1</tspan></text>
+        <text x="18" y="172" fill="#6b7280">$ <tspan fill="#ffb454">shipping</tspan><tspan class="caret" fill="#ffb454">▍</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
