@@ -12,22 +12,22 @@
     <line x1="22" y1="46" x2="358" y2="46" stroke="#ffffff" stroke-opacity=".08"/>
     <rect x="22" y="66" width="336" height="10" rx="5" fill="#ffffff" fill-opacity=".06"/>
     <g clip-path="url(#barclip)"><rect x="22.0" y="66" width="0" height="10" fill="#ffb454">
-      <animate attributeName="width" from="0" to="87.4"
+      <animate attributeName="width" from="0" to="87.3"
                begin="0.20s" dur=".7s" fill="freeze"/>
-    </rect><rect x="109.4" y="66" width="0" height="10" fill="#ff9a4d">
-      <animate attributeName="width" from="0" to="71.1"
+    </rect><rect x="109.3" y="66" width="0" height="10" fill="#ff9a4d">
+      <animate attributeName="width" from="0" to="71.0"
                begin="0.30s" dur=".7s" fill="freeze"/>
     </rect><rect x="180.4" y="66" width="0" height="10" fill="#ff7a5c">
       <animate attributeName="width" from="0" to="48.8"
                begin="0.40s" dur=".7s" fill="freeze"/>
-    </rect><rect x="229.2" y="66" width="0" height="10" fill="#e5533d">
+    </rect><rect x="229.1" y="66" width="0" height="10" fill="#e5533d">
       <animate attributeName="width" from="0" to="35.2"
                begin="0.50s" dur=".7s" fill="freeze"/>
-    </rect><rect x="264.4" y="66" width="0" height="10" fill="#c98b5e">
+    </rect><rect x="264.3" y="66" width="0" height="10" fill="#c98b5e">
       <animate attributeName="width" from="0" to="25.6"
                begin="0.60s" dur=".7s" fill="freeze"/>
     </rect><rect x="289.9" y="66" width="0" height="10" fill="#a9c46c">
-      <animate attributeName="width" from="0" to="19.3"
+      <animate attributeName="width" from="0" to="19.4"
                begin="0.70s" dur=".7s" fill="freeze"/>
     </rect><rect x="309.3" y="66" width="0" height="10" fill="#4a5057">
       <animate attributeName="width" from="0" to="48.7"
@@ -44,7 +44,7 @@
       <animate attributeName="opacity" from="0" to="1" begin="0.49s" dur=".5s" fill="freeze"/>
       <circle cx="28" cy="136" r="4.5" fill="#ff9a4d"/>
       <text x="44" y="140" font-size="12" fill="#eef1f4">C++</text>
-      <text x="358" y="140" font-size="12" text-anchor="end" fill="#9099a1">21.2%</text>
+      <text x="358" y="140" font-size="12" text-anchor="end" fill="#9099a1">21.1%</text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.58s" dur=".5s" fill="freeze"/>
