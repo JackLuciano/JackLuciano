@@ -24,13 +24,13 @@
       <animate attributeName="width" from="0" to="35.1"
                begin="0.50s" dur=".7s" fill="freeze"/>
     </rect><rect x="264.2" y="66" width="0" height="10" fill="#c98b5e">
-      <animate attributeName="width" from="0" to="25.6"
+      <animate attributeName="width" from="0" to="25.5"
                begin="0.60s" dur=".7s" fill="freeze"/>
     </rect><rect x="289.7" y="66" width="0" height="10" fill="#a9c46c">
       <animate attributeName="width" from="0" to="19.5"
                begin="0.70s" dur=".7s" fill="freeze"/>
-    </rect><rect x="309.2" y="66" width="0" height="10" fill="#4a5057">
-      <animate attributeName="width" from="0" to="48.8"
+    </rect><rect x="309.3" y="66" width="0" height="10" fill="#4a5057">
+      <animate attributeName="width" from="0" to="48.7"
                begin="0.80s" dur=".7s" fill="freeze"/>
     </rect></g>
     
